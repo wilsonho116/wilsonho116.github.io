@@ -7818,6 +7818,33 @@ section:after {
     position: relative;
 }
 
+.pe-video-style-2 .plyr--full-ui.plyr--video .plyr__control--overlaid {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #ededed;
+}
+
+.pe-video-style-2 .plyr--full-ui.plyr--video .plyr__control--overlaid::before {
+    display: none
+}
+
+.plyr.plyr--stopped .plyr__controls {
+    display: none
+}
+
+.plyr__control--overlaid svg {
+    left: 2px;
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    color: #ededed;
+}
+
+
 .video-control {
     position: absolute;
     width: 100%;
